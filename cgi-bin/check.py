@@ -8,14 +8,15 @@ HTML = file.read()
 file.close()
 
 
+index = 0
 form = cgi.FieldStorage()
 names = ('firstName', 'secondName', 'phoneNumber', 'email', 'birthday', 'comment')
 forReplace = ('$FIRST$', '$SECOND$', '$PHONE$', '$EMAIL$', '$BIRTHDAY$', '$TEXTAREA$')
 for name in names:
 	Field = name[0].upper() + name[1:]
 	Field = cgi.escape(form['%s' % name].value)
-	for replaced in forReplace:
-		HTML = HTML.replace('%s' % replaced, Field)
+	HTML = HTML.replace('%s' % forReplace[index], Field)
+	index += 1
 
 
 """
