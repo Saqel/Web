@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<title> My Web-project on the Python</title>
+<meta http-equiv = "Content-Type" content="text/html; charset=UTF-8">
+<style>
+	#header{
+		width: 40%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background: white no-repeat;
+
+
+	}
+	#content{
+		width: 47%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background: orange no-repeat;
+	}
+	.td-text{
+		text-align: right;
+	}
+	
+	.bottom-text{
+		padding-left: 3%;
+		color: #603913;
+	}
+
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="title">
+		<h1 align="center"> Profile of the new employee 
+			<br>Check your data</h1>
+	</div>
+</div>
+<div id="content">
+	<div id="form">
+	<form name="test" method="post" action="/cgi-bin/cgi-name.py">
+	<table align="center" cellpadding="10">
+	<tr>
+		<td class="td-text">Your First Name:<br></td>
+		<td><b>$FIRST$</b></td>
+	</tr>
+	<tr>
+		<td class="td-text">Your Second Name:<br></td>
+		<td><b>$SECOND$</b></td>
+	</tr>
+	<tr>	
+		<td class="td-text">Your Phone Number:<br></td>
+		<td><b>$PHONE$</b></td>
+	</tr>
+	<tr>
+		<td class="td-text">Your E-mail:<br></td>
+		<td><b>$EMAIL$</b></td>
+	</tr>
+	<tr>
+		<td class="td-text">Your Birthday:<br></td>
+		<td><b>$BIRTHDAY$</b></td>
+	</tr>
+	<tr>
+		<td class="td-text">Marital Status:<br></td>
+		<td><b>$MARIAL$</b></td>
+	</tr>
+	<tr>
+		<td class="td-text">Your Comments:<br></td>
+		<td><textarea rows="10" cols="45" name="text">$TEXTAREA$</textarea></td>
+	</tr>
+	<tr>	
+	</tr>
+	<tr>
+		<td><input type="submit" style="margin-left: 150%;"></td>
+	</tr>
+	</table>
+	</form>
+</div>
+</body>
+<footer></footer>
+</HTML>
