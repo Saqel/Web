@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<title> My Web-project on the Python</title>
+<meta http-equiv = "Content-Type" content="text/html; charset=UTF-8">
+<style>
+	#header{
+		width: 40%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background: white no-repeat;
+
+
+	}
+	#content{
+		width: 47%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background: orange no-repeat;
+	}
+	.td-text{
+		text-align: right;
+	}
+	
+	.bottom-text{
+		padding-left: 3%;
+		color: #603913;
+	}
+
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="title">
+		<h1 align="center"> Profile of the new employee </h1>
+	</div>
+</div>
+<div id="content">
+	<div id="form">
+	<form name="test" method="post" action="/cgi-bin/check.py">
+	<table align="center" cellpadding="10">
+	<tr>
+		<td class="td-text"><b>Your First Name:</b><br></td>
+		<td><input type="text" size="40" name="firstName"></td>
+	</tr>
+	<tr>
+		<td class="td-text"><b>Your Second Name:</b><br></td>
+		<td><input type="text" size="40" name="secondName"></td>
+	</tr>
+	<tr>	
+		<td class="td-text"><b>Your Phone Number:</b><br></td>
+		<td><input type="text" size="40" name="phoneNumber"></td>
+	</tr>
+	<tr>
+		<td class="td-text"><b>Your E-mail:</b><br></td>
+		<td><input type="text" size="40" name="email"></td>
+	</tr>
+	<tr>
+		<td class="td-text"><b>Your Birthday:</b><br></td>
+		<td><input type="date" size="40" name="birthday"></td>
+	</tr>
+	<tr>
+		<td class="td-text"><b>Marital Status:</b><br></td>
+		<td>
+			<select name="marial">
+				<option value="none">--------</option>
+				<option value="married">Married</option>
+				<option value="single">Single</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="td-text"><b>Your Comments:</b><br></td>
+		<td><textarea rows="10" cols="45" name="comment"></textarea></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="point" style="margin-left: 100%; margin-bottom: 80%;"></td>
+		<td class="bottom-text">Я даю свое согласие на передачу в "____" 
+		<br>моих персональных данных и их обработку  "____" 
+		<br>путем хранения и использования исключительно 
+		<br>для целей _____, _____, а также использования 
+		<br>во внутренних сетевых ресурсах. Я понимаю, что 
+		<br>информация из полей, выделенных символом *,
+		<br>будет доступна другим сотрудникам во внутренних 
+		<br>сетевых ресурсах после ____.
+		</td>
+	
+	</tr>
+	<tr>
+		<td><input type="submit" style="margin-left: 150%;"></td>
+	</tr>
+	</table>
+	</form>
+</div>
+</body>
+<footer></footer>
+</HTML>
